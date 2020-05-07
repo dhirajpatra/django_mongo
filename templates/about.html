@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%  block header %}
+
+This is pages home page
+
+{%  endblock %}
+
+{% block content %}
+
+{{ request.user|capfirst }}
+
+{{ my_text }}
+
+<ul>
+{% for item in my_list %}
+    <li>{{ item|add:20 }}</li>
+{% endfor %}
+</ul>
+
+{%  endblock %}

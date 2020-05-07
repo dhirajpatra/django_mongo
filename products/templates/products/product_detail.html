@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+<h1>Details of Product ID {{ obj.id }}</h1>
+Title: {{ obj.title }}
+<br>
+Descriotion: {{ obj.description }}
+<br>
+Price: {{ obj.price }}
+<br>
+Summary: {{ obj.summary }}
+<br>
+Featured: {% if obj.featured == True %} Yes {% else %} No {% endif %}
+
+{% endblock %}
